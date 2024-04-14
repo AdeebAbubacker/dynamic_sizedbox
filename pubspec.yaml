@@ -1,8 +1,10 @@
 name: dynamic_sizedbox
 description: "A new Flutter package with a customized Sizedbox"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/AdeebAbubacker/dynamic_sizedbox
-
+people:
+  - name: Adeeb Abubacker
+    email: adeebabu655@gmail.com
 environment:
   sdk: '>=3.2.6 <4.0.0'
   flutter: ">=1.17.0"
