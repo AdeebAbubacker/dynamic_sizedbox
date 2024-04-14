@@ -13,4 +13,4 @@ To use this package, add `dynamic_sizedbox` as a dependency in your `pubspec.yam
 
 ```yaml
 dependencies:
-  dynamic_sizedbox: ^0.0.1.1
+  dynamic_sizedbox: ^0.0.2
