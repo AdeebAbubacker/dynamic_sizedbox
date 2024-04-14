@@ -3,16 +3,35 @@ library dynamic_sizedbox;
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-/// A Calculator.
+
+
+class FigmaConstants {
+  static const double figmaDeviceHeight = 852;
+  static const double figmaDeviceWidth = 393;
+}
+
+
+/// Full height of the device
+double screenHeight(BuildContext context) {
+  return MediaQuery.of(context).size.height;
+}
+
+
+/// Space between horizontal items
+double spacingVertical(BuildContext context,{required double height}) {
+  return (screenHeight(context) * height) /FigmaConstants.figmaDeviceHeight;
+}
+
 class DynamicSizedBox extends StatelessWidget {
-  const DynamicSizedBox({super.key});
+  final double height;
+  const DynamicSizedBox({super.key, required this.height});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 200,
-      height: 300,
-      color: Colors.amber,
-    );
+    return SizedBox(
+        height: spacingVertical(
+      context,
+      height: height,
+    ));
   }
 }
