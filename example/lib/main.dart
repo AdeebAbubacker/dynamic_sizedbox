@@ -147,10 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times:',
             ),
-            CustomButton(
-              onPressed: _incrementCounter,
-              child: const Text("Click me")
-            ),
+           
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
