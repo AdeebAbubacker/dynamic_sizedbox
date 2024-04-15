@@ -11,6 +11,10 @@ A Flutter package that provides a dynamic `SizedBox` widget, allowing for dynami
 
 To use this package, add `dynamic_sizedbox` as a dependency in your `pubspec.yaml` file.
 
+## Usage
+
+
+
 ```yaml
 dependencies:
-  dynamic_sizedbox: ^0.0.3
+  dynamic_sizedbox: ^0.0.4
